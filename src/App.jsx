@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import Todo from "./components/Todo";
 import Header from "./components/Header";
 import InputArea from "./components/InputArea";
