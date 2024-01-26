@@ -34,7 +34,7 @@ const App = () => {
     }
   };
 
-  // 삭제 버튼 클릭(x)
+  // 삭제 버튼 클릭
   const clickDelHandler = (id) => {
     const newTodo = todo.filter((todo) => todo.id !== id);
     setTodo(newTodo);
@@ -79,7 +79,6 @@ const App = () => {
         {todo
           .filter((item) => !item.isDone)
           .map((item) => (
-            // key ={item.id} 에서 id값을 주는 이유는 각 id를 추적하기 위해서
             <Todo
               key={item.id}
               item={item}
